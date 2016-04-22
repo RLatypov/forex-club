@@ -1,0 +1,110 @@
+.page-registration {
+  .bottom-header {
+    padding-bottom: 35px;
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      padding-bottom: 60px;
+    }
+    @media (min-width: @screen-md-min) {
+      .button {
+        margin: 15px 0 0 55px;
+      }
+    }
+  }
+  .banner-header {
+    .banner-header-text {
+      padding: 0;
+    }
+  }
+}
+
+#form-registration {
+  input, select {
+    .box-sizing(border-box);
+    .size(100%,28px);
+    border: 1px solid #cdcdcd;
+    outline: none;
+    border-radius:(5px);
+    padding: 4px 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .error {
+    color: red;
+    display: block;
+    @media (min-width: @screen-md-min) {
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+  }
+  em {
+    color: @primary-color;
+    position: relative;
+    right: -5px;
+    top: -5px;
+  }
+  .form-line {
+    margin-bottom: 20px;
+    position: relative;
+    zoom: 1; //Fix IE 7
+    &.-form-line-login {
+      .form-label {
+        font-size: 20px;
+      }
+      .form-elem {
+        @media (min-width: @screen-md-min) {
+          width: 380px;
+        }
+      }
+      .form-text {
+        > div {
+          position: absolute;
+          width: 200px;
+          top: 10px;
+          left: 35px;
+          &::before {
+            position: absolute;
+            content: " ";
+            width: 20px;
+            height: 1px;
+            left: -27px;
+            top: 8px;
+            border-top: 1px dotted @text-color;
+          }
+        }
+      }
+      input {
+        height: 35px;
+        font-size: 20px;
+      }
+    }
+    &.-form-line-tel {
+      .form-elem {
+        label {
+          font-size: 12px;
+        }
+      }
+      .form-col-elem.col-md-8 {
+        @media (min-width: @screen-md-min) {
+          float: right;
+        }
+      }
+    }
+  }
+  .form-label {
+    margin-right: 20px;
+    vertical-align: top;
+    font-size: 16px;
+    @media (min-width: @screen-md-min) {
+      text-align: right;
+      width: 160px;
+    }
+  }
+  .form-elem {
+    position: relative;
+    @media (min-width: @screen-md-min) {
+      width: 330px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+body {
+  font-size: @font-size-base;
+  font-family: @font-family-sans-serif;
+  color: @text-color;
+  line-height: @line-height-base;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: @link-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: @font-size-h1;
+  color: @dark-gray-color;
+}
+
+h2 {
+  font-size: @font-size-h2;
+  color: @dark-gray-color;
+}
+
+h3 {
+  font-size: @font-size-h3;
+  color: @dark-gray-color;
+}
+
+h4 {
+  font-size: @font-size-h4;
+  color: @dark-gray-color;
+}
+
+#content {
+  padding-bottom: 10px;
+}
+
+.container {
+  padding: 0 15px;
+  @media (min-width: @screen-sm-min) {
+    padding: 0;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
