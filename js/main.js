@@ -21,7 +21,7 @@ function initSocial() {
 function initClock() {
     var clock1 = new FxClock({
         element : '#fx-clock-1',
-        expires : 'April 22 2016 22:59:59'
+        expires : 'April 29 2016 22:59:59'
         //expires : new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000)
     });
 
@@ -43,7 +43,7 @@ function initValid() {
 
         if(!$form.find('.error').length) {
             var formStorage = new StorageData(
-                'fx-registration','true', { expires: 'April 22 2021 22:59:59'});
+                'fx-registration','true', { expires: 'April 29 2021 22:59:59'});
 
             if(formStorage.getStorage()) {
                 alert('Вы уже зарегистрированы!');
