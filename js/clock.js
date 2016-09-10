@@ -16,9 +16,8 @@ FxClock.prototype.init = function() {
     this.positions    = $(this.elem).find('.position');
     this.word         = $(this.elem).find('.word');
 
-    var clockStorage = new StorageData(this.elem.substring(1),this.expires, { expires: this.expires } );
-
-    var getStorage = clockStorage.getStorage();
+    var clockStorage = new StorageData(this.elem.substring(1),this.expires, { expires: this.expires }),
+        getStorage = clockStorage.getStorage();
 
     getStorage === undefined || getStorage == null
         ? clockStorage.setStorage()

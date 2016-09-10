@@ -42,8 +42,7 @@ function initValid() {
         });
 
         if(!$form.find('.error').length) {
-            var formStorage = new StorageData(
-                'fx-registration','true', { expires: 'April 29 2021 22:59:59'});
+            var formStorage = new StorageData('fx-registration','true', { expires: 'April 29 2021 22:59:59'});
 
             if(formStorage.getStorage()) {
                 alert('Вы уже зарегистрированы!');
